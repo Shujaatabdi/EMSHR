@@ -1,0 +1,37 @@
+﻿    <div class="text-primary">
+    
+    <div class="row" style="padding-left:5px">
+        <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-addon">Record Per Page</span>
+                    <select class="form-control" style="width:75px;" id="Cbo_RecordPP" name="Cbo_RecordPP" onchange="Cbo_RecordPP_Change(this)">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">500</option>
+                    </select>
+                    <span class="input-group-addon">out of</span>
+                    <span id="tot" class="input-group-addon">
+                        1
+                    </span>
+                </div>
+        </div>
+        <div class="col-md-5" style="padding-top:6px">
+            <div class="col-lg-10">
+                <div class="input-group-sm">
+                    <span><button type="button" class="btn btn-sm btn-primary" onclick="ChangePage('F')"><i class="glyphicon glyphicon-step-backward"></i></button></span>
+                    <span><button type="button" class="btn btn-sm btn-primary" onclick="ChangePage('P')"><i class="glyphicon glyphicon-backward"></i></button></span>
+                    <span>Page</span>
+                    <span><input id="TxtPageNo" class="small" style="width: 22px; text-align: center" name="TxtPageNo" type="text" onkeypress="return ChangeTargetPage(event)" /></span>
+                    <span>of</span>
+                    <span id="MPageCount">1</span>
+                    <span><button type="button" class="btn btn-sm btn-primary" onclick="ChangePage('N')">&nbsp<i class="glyphicon glyphicon-forward"></i></button></span>
+                    <span><button type="button" class="btn btn-sm btn-primary" onclick="ChangePage('L')">&nbsp<i class="glyphicon glyphicon-step-forward"></i></button></span>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+</div>
+

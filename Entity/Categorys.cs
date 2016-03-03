@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entity
+{
+   public class Categorys
+    {
+        public int ID { get; set; }
+        [Required(ErrorMessage = "insert Cate name")]
+        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid Cate Name I.e no Special Charactors")]
+        public string CateName { get; set; }
+
+    }
+}

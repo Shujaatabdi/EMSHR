@@ -1,0 +1,5 @@
+F:\Shujaat\EMPMSHR\Entity\bin\Debug\Entity.dll
+F:\Shujaat\EMPMSHR\Entity\bin\Debug\Entity.pdb
+F:\Shujaat\EMPMSHR\Entity\obj\Debug\Entity.dll
+F:\Shujaat\EMPMSHR\Entity\obj\Debug\Entity.pdb
+F:\Shujaat\EMPMSHR\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache

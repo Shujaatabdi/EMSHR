@@ -1,0 +1,11 @@
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\BAL.dll
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\BAL.pdb
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\DAL.dll
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\Entity.dll
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\Newtonsoft.Json.dll
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\DAL.pdb
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\Entity.pdb
+F:\Shujaat\EMPMSHR\BAL\bin\Debug\Newtonsoft.Json.xml
+F:\Shujaat\EMPMSHR\BAL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\Shujaat\EMPMSHR\BAL\obj\Debug\BAL.dll
+F:\Shujaat\EMPMSHR\BAL\obj\Debug\BAL.pdb

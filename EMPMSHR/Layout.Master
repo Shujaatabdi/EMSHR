@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="EMPMSHR.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <%--<script src="Scripts/jquery-2.2.0.min.js"></script>--%>
+    <script src="Scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+<%--    <script src="Scripts/bootstrap-datepicker.js"></script>
+    <link href="Content/bootstrap-datepicker3.css" rel="stylesheet" />    
+    <script src="Scripts/bootstrap-datepicker.min.js"></script>--%>
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="Content/ATMAjaxMethods.js"></script>
+    <script src="Content/paging.js"></script>
+
+    
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" class="form-horizontal" runat="server">
+        <div>
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-default">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" runat="server" href="~/">EMS-HR</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a runat="server" href="~/">Home</a></li>
+                            <li><a runat="server" href="~/About">About</a></li>
+                            <li><a runat="server" href="~/Contact">Contact</a></li>
+                        </ul>
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <AnonymousTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="glyphicon glyphicon-envelope"></i><i class="caret"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-messages">
+                                            <li>
+                                                <a href="#">
+                                                    <div>
+                                                        <strong>John Smith</strong>
+                                                        <span class="pull-right text-muted">
+                                                            <em>Yesterday</em>
+                                                        </span>
+                                                    </div>
+                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                                </a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="#">
+                                                    <div>
+                                                        <strong>John Smith</strong>
+                                                        <span class="pull-right text-muted">
+                                                            <em>Yesterday</em>
+                                                        </span>
+                                                    </div>
+                                                    <div class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                                </a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a href="#">
+                                                    <div>
+                                                        <strong>John Smith</strong>
+                                                        <span class="pull-right text-muted">
+                                                            <em>Yesterday</em>
+                                                        </span>
+                                                    </div>
+                                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                                </a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li>
+                                                <a class="text-center" href="#">
+                                                    <strong>Read All Messages</strong>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.dropdown-messages -->
+                                    </li>
+                                    <li class="dropdown">
+                                        <a id="Welcometxt" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Welcome   <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                            <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>Hello</li>
+                                    <li>
+                                       asd
+                                    </li>
+                                </ul>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div style="min-height:500px" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+
+                <hr />
+                <footer>
+                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                </footer>
+            </div>
+        </div>
+    </form>
+
+            <div class="modal fade" id="defaultalert" tabindex="-1" role="dialog" aria-labelledby="defaultalert" aria-hidden="true" data-backdrop="static" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body danger">
+                </div>
+                <div class="modal-footer">
+                    <button id="btnPopCancel"  type="button" class="btn btn-default" >Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
