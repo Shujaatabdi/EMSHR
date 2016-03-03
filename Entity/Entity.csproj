@@ -47,6 +47,7 @@
     <Compile Include="Deductions.cs" />
     <Compile Include="Departments.cs" />
     <Compile Include="Designations.cs" />
+    <Compile Include="EmpAddress.cs" />
     <Compile Include="EmpBInfo.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="LeaveApp.cs" />
