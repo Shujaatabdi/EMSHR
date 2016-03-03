@@ -80,6 +80,7 @@
     <Content Include="Designation.aspx" />
     <Content Include="EmpBankInfo.aspx" />
     <Content Include="EmpLeaveApps.aspx" />
+    <Content Include="EmployeeAddress.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -275,6 +276,12 @@
     </Compile>
     <Compile Include="EmpLeaveApps.aspx.designer.cs">
       <DependentUpon>EmpLeaveApps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAddress.aspx.cs">
+      <DependentUpon>EmployeeAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAddress.aspx.designer.cs">
+      <DependentUpon>EmployeeAddress.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employees.aspx.cs">
       <DependentUpon>Employees.aspx</DependentUpon>
