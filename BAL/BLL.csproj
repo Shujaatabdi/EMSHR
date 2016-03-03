@@ -55,6 +55,7 @@
     <Compile Include="DepartmentBLL.cs" />
     <Compile Include="DesignationBLL.cs" />
     <Compile Include="EmpBankInfoBLL.cs" />
+    <Compile Include="EmployeeAddressBLL.cs" />
     <Compile Include="LeaveAppBLL.cs" />
     <Compile Include="LeaveTypeBLL.cs" />
     <Compile Include="PoliciesBLL.cs" />

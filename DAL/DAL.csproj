@@ -57,6 +57,7 @@
     <Compile Include="DeductionDAL.cs" />
     <Compile Include="DepartmentDAL.cs" />
     <Compile Include="DesignationDAL.cs" />
+    <Compile Include="EmpAddressDAL.cs" />
     <Compile Include="EmpBankInfoDAL.cs" />
     <Compile Include="GeneralDB.cs" />
     <Compile Include="LeaveAppDAL.cs" />
