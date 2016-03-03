@@ -59,6 +59,6 @@ namespace Entity
         [DataType(DataType.Text)]
         public string TaxHst { get; set; }
 
-        public decimal Salary { get; set; }
+        public decimal? Salary { get; set; }
     }
 }
