@@ -14,6 +14,8 @@
         var _SortAs = "Asc";
         var _RecordPP = "10";
         var _PageNo = "1";
+        var _SearchBy = "0";
+        var _SearchVal = "0";
         var _RecordCount = "0";
         var _Rowcount = "0";
         var PageCount = "0";
@@ -27,8 +29,18 @@
             // var pval = '{ "PageNo" :"50","RecordPerPage":"12","SortBy":"12","SortAs":"12","SearchBy":"12","SearchVal":"12","Extra" : [{"Pname":"@CompID","Pval":"2"}] }';
             // if you want to get all records then use this line as it has no extra parameter at the end......
             //_MethodName = LoadShift;
-            var pval = '{ "PageNo" :"' + _PageNo + '","RecordPerPage":"' + _RecordPP + '","SortBy":"' + _Sorting + '","SortAs":"' + _SortAs + '","SearchBy":"0","SearchVal":"0" }';
+            var pval = '{ "PageNo" :"' + _PageNo + '","RecordPerPage":"' + _RecordPP + '","SortBy":"' + _Sorting + '","SortAs":"' + _SortAs + '","SearchBy":"' + _SearchBy + '","SearchVal":"' + _SearchVal + '"}';
+            alert(pval);
             CallByAjaxWithParameter("data", pval, _PageName, _MethodType, "GetAllowanceForPaging", OnSuccessLoadData)
+
+        }
+
+        function Search() {
+
+            _SearchBy = $('#CboSb').val();
+            _SearchVal = $('#SearchVal').val();
+            LoadAllowance();
+
 
         }
         function LoadAllAllowance() {
@@ -40,25 +52,25 @@
 
             //alert(ShftID);
             _AllowanceID = AllowanceID;
-          
+
             var pval = '{ "PageNo" :"0","RecordPerPage":"12","SortBy":"0","SortAs":"0","SearchBy":"0","SearchVal":"0","Extra" : [{"Pname":"@ID","Pval":"' + AllowanceID + '"}] }';
             //var pval = '{ "ID":"' + DepartmentID + '"}';
-           
+
             CallByAjaxWithParameter("data", pval, _PageName, _MethodType, "GetAllowanceByID", OnSuccessLoadDataForEdit)
 
-           // alert(pval);
-           // alert(333);
+            // alert(pval);
+            // alert(333);
         }
 
         function Delete_Click(AllowanceID) {
-           
+
             var pval = '{ "ID":"' + AllowanceID + '"}';
             CallByAjaxWithParameter("data", pval, _PageName, _MethodType, "DeleteAllowance", OnSuccessSave);
             //  LoadDepartment();
         }
 
         function OnSuccessLoadDataForEdit(response) {
-           
+
             $("#Tbl").hide();
             $("#DivAddN").appendTo("#Container");
             $("#DivAddN").show();
@@ -66,17 +78,17 @@
             $('#Btnsaved').hide();
 
 
-            
+
             var Nval = response.d.replace('[', '').replace(']', '');
             var ss = JSON.parse(Nval);
             //$.each(ss[0], function (key, value) {
             //    alert(key+ " - "+ value);
             //});
             //alert(ss.TimeOut);
-           
-            
+
+
             $('#TxtdprtName').val(ss.Name);
-            
+
 
             //$('#DDLHours option:selected').val(tm[0].val);
             //$('#DDLMints option:selected').val(tm[1].val);
@@ -87,7 +99,7 @@
         }
 
         function OnSuccessLoadData(response) {
-      
+
             //alert(response.d);
             var v1 = response.d.split("@@");
 
@@ -144,7 +156,7 @@
         }
 
         function BtnAddNew_OnClick() {
-          
+
             $('#TxtdprtName').val('');//#DDLHours
             $("#Tbl").hide();
             $("#DivAddN").appendTo("#Container");
@@ -160,7 +172,8 @@
             $("#DivAddN").hide();
 
             $("#Tbl").appendTo("#Container");
-
+            //$("#TblsEARCH").appendTo("#Container");
+            $("#TblsEARCH").show();
             $("#Tbl").show();
             LoadAllowance();
         }
@@ -168,7 +181,7 @@
         function BtnSave_OnClick() {
 
             var pval = '{"Name":"' + $('#TxtdprtName').val() + '"}';
-           
+
             CallByAjaxWithParameter("data", pval, _PageName, _MethodType, "AllowanceAdd", OnSuccessSave);
 
         }
@@ -180,18 +193,18 @@
         }
 
         function BtnEditSave_OnClick() {
-            
+
             var pval = '{"ID" :"' + _AllowanceID + '", "Name" :"' + $('#TxtdprtName').val() + '"}';
-            
+
             var sd = JSON.parse(pval);
             sd = JSON.parse(pval);
             CallByAjaxWithParameter("data", pval, _PageName, _MethodType, "EditAllowance", OnSuccessSave)
             // LoadDepartment();
         }
         function BtnCancel_OnClick() {
-           
+
             $('#TxtdprtName').val('');//#DDLHours
-            
+
         }
     </script>
     <script src="Content/paging.js"></script>
@@ -213,7 +226,7 @@
                                 <div class="col-lg-4">
                                     <select id="CboSb" class="form-control input-sm">
                                         
-                                        <option value="2">Name
+                                        <option value="1">Name
                                         </option>
                                        
                                     </select>
