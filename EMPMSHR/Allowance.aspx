@@ -215,7 +215,7 @@
 
     <br /><br /><br />
     <div class="panel">
-        <div><input type="button" id="BtnAddnew" onclick="BtnAddNew_OnClick()" class="btn btn-primary" value="Add New" /><input type="button" id="BtnViewComapny" onclick="    BtnViewComapny_OnClick()" class="btn btn-primary" value="View Allowance" /></div>
+        <div><input type="button" id="BtnAddnew" onclick="BtnAddNew_OnClick()" class="btn btn-primary" value="Add all New" /><input type="button" id="BtnViewComapny" onclick="    BtnViewComapny_OnClick()" class="btn btn-primary" value="View Allowance" /></div>
         <div id="TblsEARCH" style="display: none">
                         <div class="row">
                             <div class="col-lg-6"></div>
