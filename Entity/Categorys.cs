@@ -10,8 +10,8 @@ namespace Entity
    public class Categorys
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "insert Cate name")]
-        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid Cate Name I.e no Special Charactors")]
+        [Required(ErrorMessage = "insert Category name")]
+        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9]*$", ErrorMessage = "insert Valid Category Name I.e no Special Charactors")]
         public string CateName { get; set; }
 
     }

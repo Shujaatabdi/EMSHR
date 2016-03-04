@@ -11,8 +11,8 @@ namespace Entity
     {
 
         public int ID { get; set; }
-        [Required(ErrorMessage = "insert Name")]
-        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid BranchID I.e no Special Charactors")]
+        [Required(ErrorMessage = "Deduction Name is required")]
+        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid Deduction Name I.e no Special Charactors")]
         public string Name { get; set; }
     }
 }

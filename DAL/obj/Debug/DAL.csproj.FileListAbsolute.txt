@@ -7,3 +7,12 @@ F:\Shujaat\EMPMSHR\DAL\bin\Debug\Newtonsoft.Json.xml
 F:\Shujaat\EMPMSHR\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 F:\Shujaat\EMPMSHR\DAL\obj\Debug\DAL.dll
 F:\Shujaat\EMPMSHR\DAL\obj\Debug\DAL.pdb
+D:\OnLineEMSHR\DAL\bin\Debug\DAL.dll
+D:\OnLineEMSHR\DAL\bin\Debug\DAL.pdb
+D:\OnLineEMSHR\DAL\bin\Debug\Entity.dll
+D:\OnLineEMSHR\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\OnLineEMSHR\DAL\bin\Debug\Entity.pdb
+D:\OnLineEMSHR\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\OnLineEMSHR\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\OnLineEMSHR\DAL\obj\Debug\DAL.dll
+D:\OnLineEMSHR\DAL\obj\Debug\DAL.pdb

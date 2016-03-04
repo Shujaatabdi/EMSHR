@@ -30,7 +30,7 @@
             // if you want to get all records then use this line as it has no extra parameter at the end......
             //_MethodName = LoadShift;
             var pval = '{ "PageNo" :"' + _PageNo + '","RecordPerPage":"' + _RecordPP + '","SortBy":"' + _Sorting + '","SortAs":"' + _SortAs + '","SearchBy":"'+_SearchBy+'","SearchVal":"'+_SearchVal+'" }';
-            CallByAjaxWithParameter("data", _pval_PageName, _MethodType, "GetDeductionForPaging", OnSuccessLoadData)
+            CallByAjaxWithParameter("data", pval,_PageName, _MethodType, "GetDeductionForPaging", OnSuccessLoadData)
 
         }
         function LoadAllDeduction() {
@@ -204,7 +204,7 @@
 
     <br /><br /><br />
     <div class="panel">
-        <div><input type="button" id="BtnAddnew" onclick="BtnAddNew_OnClick()" class="btn btn-primary" value="Add New" /><input type="button" id="BtnViewComapny" onclick="    BtnViewComapny_OnClick()" class="btn btn-primary" value="View Allowance" /></div>
+        <div><input type="button" id="BtnAddnew" onclick="BtnAddNew_OnClick()" class="btn btn-primary" value="Add New" /><input type="button" id="BtnViewComapny" onclick="    BtnViewComapny_OnClick()" class="btn btn-primary" value="View Deduction" /></div>
         <div id="TblsEARCH" style="display: none">
                         <div class="row">
                             <div class="col-lg-6"></div>

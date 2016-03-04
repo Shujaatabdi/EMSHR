@@ -10,11 +10,11 @@ namespace Entity
     public class LeaveType
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "insert LeaveTypeAdd name")]
+        [Required(ErrorMessage = "LeaveTypeAdd Name is required")]
         [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9\s]*$", ErrorMessage = "insert Valid LeaveType Name I.e no Special Charactors")]
         public string LeaveTyName { get; set; }
-        [Required(ErrorMessage = "insert LeaveTypeAdd code")]
-        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9\s]*$", ErrorMessage = "insert Valid LeaveType Code I.e no Special Charactors")]
+        [Required(ErrorMessage = "LeaveTypeAdd Code is required")]
+        
         public string LeaveTyCode { get; set; }
     }
 }

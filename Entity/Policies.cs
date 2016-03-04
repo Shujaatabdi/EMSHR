@@ -10,7 +10,7 @@ namespace Entity
   public  class Policies
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "insert Name")]
+        [Required(ErrorMessage = "Policies Name is required")]
         [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid BranchID I.e no Special Charactors")]
         public string Name { get; set; }
 

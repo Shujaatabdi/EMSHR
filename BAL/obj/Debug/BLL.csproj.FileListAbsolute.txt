@@ -9,3 +9,14 @@ F:\Shujaat\EMPMSHR\BAL\bin\Debug\Newtonsoft.Json.xml
 F:\Shujaat\EMPMSHR\BAL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 F:\Shujaat\EMPMSHR\BAL\obj\Debug\BAL.dll
 F:\Shujaat\EMPMSHR\BAL\obj\Debug\BAL.pdb
+D:\OnLineEMSHR\BAL\bin\Debug\BAL.dll
+D:\OnLineEMSHR\BAL\bin\Debug\BAL.pdb
+D:\OnLineEMSHR\BAL\bin\Debug\DAL.dll
+D:\OnLineEMSHR\BAL\bin\Debug\Entity.dll
+D:\OnLineEMSHR\BAL\bin\Debug\Newtonsoft.Json.dll
+D:\OnLineEMSHR\BAL\bin\Debug\DAL.pdb
+D:\OnLineEMSHR\BAL\bin\Debug\Entity.pdb
+D:\OnLineEMSHR\BAL\bin\Debug\Newtonsoft.Json.xml
+D:\OnLineEMSHR\BAL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\OnLineEMSHR\BAL\obj\Debug\BAL.dll
+D:\OnLineEMSHR\BAL\obj\Debug\BAL.pdb

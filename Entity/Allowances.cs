@@ -10,8 +10,7 @@ namespace Entity
    public class Allowances
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "insert Name")]
-        [RegularExpression(@"^[a-zA-Z\s][a-zA-Z0-9_@\s]*$", ErrorMessage = "insert Valid BranchID I.e no Special Charactors")]
+        [Required(ErrorMessage = "Allowance Name is required")]
         public string Name { get; set; }
     }
 }

@@ -247,7 +247,9 @@
                 <fieldset>
                     <div class="form-group">
                         <div class="col-lg-2">
-                            <label class="control-label">BranchID :</label>
+                            <div class="input-group">
+                                <label class="control-label">BranchID :</label>
+                            </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="input-group">
@@ -257,7 +259,9 @@
                         </div>
 
                         <div class="col-lg-2">
-                            <label class="control-label">Name :</label>
+                            <div class="input-group">
+                                <label class="control-label">Name :</label>
+                            </div>
                         </div>
                           
                         <div class="col-lg-2">

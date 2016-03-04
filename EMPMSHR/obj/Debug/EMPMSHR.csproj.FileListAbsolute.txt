@@ -12,3 +12,17 @@ F:\Shujaat\EMPMSHR\EMPMSHR\bin\DAL.pdb
 F:\Shujaat\EMPMSHR\EMPMSHR\obj\Debug\EMPMSHR.csprojResolveAssemblyReference.cache
 F:\Shujaat\EMPMSHR\EMPMSHR\obj\Debug\EMPMSHR.dll
 F:\Shujaat\EMPMSHR\EMPMSHR\obj\Debug\EMPMSHR.pdb
+D:\OnLineEMSHR\EMPMSHR\bin\EMPMSHR.dll.config
+D:\OnLineEMSHR\EMPMSHR\bin\EMPMSHR.dll
+D:\OnLineEMSHR\EMPMSHR\bin\EMPMSHR.pdb
+D:\OnLineEMSHR\EMPMSHR\bin\BAL.dll
+D:\OnLineEMSHR\EMPMSHR\bin\Entity.dll
+D:\OnLineEMSHR\EMPMSHR\bin\Newtonsoft.Json.dll
+D:\OnLineEMSHR\EMPMSHR\bin\DAL.dll
+D:\OnLineEMSHR\EMPMSHR\bin\BAL.pdb
+D:\OnLineEMSHR\EMPMSHR\bin\Entity.pdb
+D:\OnLineEMSHR\EMPMSHR\bin\Newtonsoft.Json.xml
+D:\OnLineEMSHR\EMPMSHR\bin\DAL.pdb
+D:\OnLineEMSHR\EMPMSHR\obj\Debug\EMPMSHR.csprojResolveAssemblyReference.cache
+D:\OnLineEMSHR\EMPMSHR\obj\Debug\EMPMSHR.dll
+D:\OnLineEMSHR\EMPMSHR\obj\Debug\EMPMSHR.pdb

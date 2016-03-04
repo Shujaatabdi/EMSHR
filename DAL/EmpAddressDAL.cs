@@ -69,7 +69,7 @@ namespace DAL
             DBConnection dbCon = dbFact.GetDataAccessLayer();
             if (dbCon.OpenConnection(dbFact.ConnectionString))
             {
-                int res = Convert.ToInt32(dbCon.ExecuteScalarParameterized("[dbo].[SpEmployeeAddressAddNew]", CommandType.StoredProcedure, ht));
+                int res = Convert.ToInt32(dbCon.ExecuteScalarParameterized("SpEmployeeAddressAddNew", CommandType.StoredProcedure, ht));
                 if (res == -1)
                 {
                     result.ErrorCode = Constants.AlreadExists;

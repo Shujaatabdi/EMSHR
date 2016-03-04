@@ -11,8 +11,11 @@ namespace Entity
     {
         public int ID { get; set; }
         public int EmpID { get; set; }
+          [Required(ErrorMessage = "Leave Name is required")]
         public int LeaveTypeID { get; set; }
+          [Required(ErrorMessage = "Mention DateFrom is required")]
         public DateTime DateFrom { get; set; }
+          [Required(ErrorMessage = "Mention DateTo is required")]
         public DateTime DateTo { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }

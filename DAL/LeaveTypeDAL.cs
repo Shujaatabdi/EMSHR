@@ -106,7 +106,7 @@ namespace DAL
             if (dbCon.OpenConnection(dbFact.ConnectionString))
             {
                 //(int)dbCon.ExecuteScalarParameterized("SpShiftEdit", CommandType.StoredProcedure, ht);
-                int res = (int)dbCon.ExecuteScalarParameterized("SpLvTyEdit", CommandType.StoredProcedure, ht);
+                int res = (int)dbCon.ExecuteScalarParameterized("SpLeaveTypeEdit", CommandType.StoredProcedure, ht);
                 if (res == -1)
                 {
                     result.ErrorCode = Constants.AlreadExists;
@@ -156,7 +156,7 @@ namespace DAL
             DBConnection dbCon = dbFact.GetDataAccessLayer();
             if (dbCon.OpenConnection(dbFact.ConnectionString))
             {
-                DataSet ds = dbCon.ExecuteFetchCommandParameterized("SpLvTyGetAllPaging", CommandType.StoredProcedure, ht);
+                DataSet ds = dbCon.ExecuteFetchCommandParameterized("SpLeaveTypeGetAllPaging", CommandType.StoredProcedure, ht);
                 //if (ds.Tables[0].Rows.Count > 0)
                 //{
                 //    // success
@@ -212,7 +212,7 @@ namespace DAL
             DBConnection dbCon = dbFact.GetDataAccessLayer();
             if (dbCon.OpenConnection(dbFact.ConnectionString))
             {
-                DataSet ds = dbCon.ExecuteFetchCommandParameterized("SpLvTyByID", CommandType.StoredProcedure, ht);
+                DataSet ds = dbCon.ExecuteFetchCommandParameterized("SpLeaveTypeByID", CommandType.StoredProcedure, ht);
                 //if (ds.Tables[0].Rows.Count > 0)
                 //{
                 //    // success
